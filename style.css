@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: StratosSkyeng;
+    src: url("/cardGame/DesktopFonts/stratosskyeng-black.otf"), url("/cardGame/DesktopFonts/stratosskyeng-blackitalic.otf"), url("/cardGame/DesktopFonts/stratosskyeng-bold.otf"), url("/cardGame/DesktopFonts/stratosskyeng-bolditalic.otf"), url("/cardGame/DesktopFonts/stratosskyeng-extrabold.otf"), url("/cardGame/DesktopFonts/stratosskyeng-extrabolditalic.otf"), url("/cardGame/DesktopFonts/stratosskyeng-extralight.otf"), url("/cardGame/DesktopFonts/stratosskyeng-extralightitalic.otf"), url("/cardGame/DesktopFonts/stratosskyeng-italic.otf"), url("/cardGame/DesktopFonts/stratosskyeng-light.otf"), url("/cardGame/DesktopFonts/stratosskyeng-lightitalic.otf"), url("/cardGame/DesktopFonts/stratosskyeng-medium.otf"), url("/cardGame/DesktopFonts/stratosskyeng-mediumitalic.otf"), url("/cardGame/DesktopFonts/stratosskyeng-regular.otf"), url("/cardGame/DesktopFonts/stratosskyeng-semibold.otf"), url("/cardGame/DesktopFonts/stratosskyeng-semibolditalic.otf"), url("/cardGame/DesktopFonts/stratosskyeng-semilight.otf"), url("/cardGame/DesktopFonts/stratosskyeng-semilightitalic.otf"), url("/cardGame/DesktopFonts/stratosskyeng-thin.otf"), url("/cardGame/DesktopFonts/stratosskyeng-thinitalic.otf");
+}
+
+/* @font-face {
+    font-family: "StratosSkyeng";
+    src: url("/WebFonts/stratosskyengweb-regular.woff"), url("/WebFonts/stratosskyengweb-black.woff"), url("/WebFonts/stratosskyengweb-black.woff2"), url("/WebFonts/stratosskyengweb-blackitalic.woff"), url("/WebFonts/stratosskyengweb-blackitalic.woff2"), url("/WebFonts/stratosskyengweb-bold.woff"), url("/WebFonts/stratosskyengweb-bold.woff2"), url("/WebFonts/stratosskyengweb-bolditalic.woff"), url("/WebFonts/stratosskyengweb-bolditalic.woff2"), url("/WebFonts/stratosskyengweb-extrabold.woff"), url("/WebFonts/stratosskyengweb-extrabold.woff2"), url("/WebFonts/stratosskyengweb-extrabolditalic.woff"), url("/WebFonts/stratosskyengweb-extrabolditalic.woff2"), url("/WebFonts/stratosskyengweb-extralight.woff"), url("/WebFonts/stratosskyengweb-extralight.woff2"), url("/WebFonts/stratosskyengweb-extralightitalic.woff"), url("/WebFonts/stratosskyengweb-extralightitalic.woff2"), url("/WebFonts/stratosskyengweb-italic.woff"), url("/WebFonts/stratosskyengweb-italic.woff2"), url("/WebFonts/stratosskyengweb-light.woff"), url("/WebFonts/stratosskyengweb-light.woff2"), url("/WebFonts/stratosskyengweb-lightitalic.woff"), url("/WebFonts/stratosskyengweb-lightitalic.woff2"), url("/WebFonts/stratosskyengweb-medium.woff"), url("/WebFonts/stratosskyengweb-medium.woff2"), url("/WebFonts/stratosskyengweb-mediumitalic.woff"), url("/WebFonts/stratosskyengweb-mediumitalic.woff2"), url("/WebFonts/stratosskyengweb-regular.woff"), url("/WebFonts/stratosskyengweb-regular.woff2"), url("/WebFonts/stratosskyengweb-semibold.woff"), url("/WebFonts/stratosskyengweb-semibold.woff2"), url("/WebFonts/stratosskyengweb-semibolditalic.woff"), url("/WebFonts/stratosskyengweb-semibolditalic.woff2"), url("/WebFonts/stratosskyengweb-semilight.woff"), url("/WebFonts/stratosskyengweb-semilight.woff2"), url("/WebFonts/stratosskyengweb-semilightitalic.woff"), url("/WebFonts/stratosskyengweb-semilightitalic.woff2"), url("/WebFonts/stratosskyengweb-thin.woff"), url("/WebFonts/stratosskyengweb-thin.woff2"), url("/WebFonts/stratosskyengweb-thinitalic.woff"), url("/WebFonts/stratosskyengweb-thinitalic.woff2");
+}  */
+
+body {
+    background-color: #004980;
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    width: 480px;
+    height: 459px;
+    background: #C2F5FF;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+.title {
+    font-family: 'StratosSkyeng';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #004980;
+    width: 208px;
+    height: 96px;
+    text-align: center;
+}
+
+.picker-challenge {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+
+.btn {
+    width: 237px;
+    height: 50px;
+    cursor: pointer;
+    background: #7AC100;
+    border-radius: 12px;
+    border: none;
+    font-family: 'StratosSkyeng';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.button {
+    width: 94px;
+    height: 98px;
+    cursor: pointer;
+    font-family: 'StratosSkyeng';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #0080C1;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.5s;
+}
+
+.button:hover {
+    transform: scale(1.2);
+}
+
+.selected {
+    width: 94px;
+    height: 98px;
+    cursor: pointer;
+    font-family: 'StratosSkyeng';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #0080C1;
+    border-radius: 19px;
+    border-color: #7AC100;
+}

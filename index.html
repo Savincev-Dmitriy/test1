@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточная игра</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app"></div>
+    <script>
+        window.application = {
+        blocks: {},
+        screens: {},
+        renderScreen: function(screenName, container) {
+            if (!window.application.screens[screenName]) {
+                throw new Error('Введенный экран не существует');
+                return;
+            }
+            window.application.screens[screenName](container);
+        },
+        renderBlock: function(blockName, container) {
+            if (!window.application.blocks[blockName]) {
+                throw new Error('Введенный блок не существует');
+                return;
+            }
+            window.application.blocks[blockName](container);
+        },
+        challenge: '',
+        status: '',
+        timerPlaying: [],
+        generatedCards: '',
+        pickedCards: '',
+        }
+        
+        const container = document.querySelector('.app');
+
+        
+    </script>
+    <script src="./lib/request.js"></script>
+    <script src="./startPage.js"></script>
+    <script src="./easyChallenge.js"></script>
+    <script src="./mediumChallenge.js"></script>
+    <script src="./hardChallenge.js"></script>
+</body>
+</html>
